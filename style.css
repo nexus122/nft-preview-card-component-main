@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    min-height: 100vh;
+    background-color: #0d1a2d;
+    display: flex;
+    flex-direction: column;    
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+}
+
+.preview-card{
+    display: flex;
+    flex-direction: column;    
+    background-color: #15273f;    
+    padding: 2em;
+    border-radius: 1em;
+    width: 500px;
+}
+.preview-card img{
+    border-radius: 1em;
+
+}
+.preview-card h1{
+    color: white;
+    margin: 1em 0em 0em;
+}
+.preview-card p{
+    font-size: 1em;
+}
+
+.preview-card .time{
+    color: #94b1d9;
+}
+
+.money{
+    color: #0dedf1;
+}
+
+.info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.creator{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: #94b1d9;
+    
+}
+.accent{
+    color: #e0efff;
+}
+.avatar{
+    width: 40px;    
+}
+
+.copy{
+    color: #e0efff;
+    font-size: 2rem;
+}
+
+.hover:hover{
+    color: #27f1eb;
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 0.5px solid white;
+}
+
+.background_image{
+    background-image: url(./images/image-equilibrium.jpg);
+    background-position: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 1em;
+    margin: 0 auto;
+}
