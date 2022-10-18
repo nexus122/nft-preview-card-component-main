@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{    
     background-color: #0d1a2d;
     display: flex;
     flex-direction: column;    
-    font-family: 'Roboto', sans-serif;
     justify-content: center;
     align-items: center;
     padding: 0;
     border: 0;
     font-size: 1em;
-    overflow: hidden; /* Para que no se muestre Scroll */
+    min-height: calc(100vh - 50px);
 }
 
 .preview-card{
@@ -21,6 +25,8 @@ body{
     padding: 2em;
     border-radius: 1em;
     width: 500px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .preview-card h1{
@@ -58,7 +64,7 @@ body{
 }
 
 .copy{
-    color: #e0efff;
+    color: #94b1d9;
     font-size: 1.3rem;
 }
 
@@ -99,6 +105,25 @@ hr{
 .background_framework:hover{
     background-color: rgba(0, 166, 192, 0.6);
     color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 1em;
+    background-color: #213e65;
+    color: white;    
+    gap: 1em;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #0d1a2d;
 }
 
 /* mediaquery 425px */
