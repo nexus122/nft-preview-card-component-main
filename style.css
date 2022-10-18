@@ -79,10 +79,12 @@ main{
 }
 
 hr{
-    width: 100%;
+    border: none;
+    height: 1px;
+    color: #20324a; 
+    background-color: #20324a;
     margin-top: 1em;
     margin-bottom: 1em;
-    border: 0.5px solid white;
 }
 
 .background_image{
