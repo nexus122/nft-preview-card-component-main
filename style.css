@@ -11,6 +11,7 @@ body{
     padding: 0;
     border: 0;
     font-size: 1em;
+    overflow: hidden; /* Para que no se muestre Scroll */
 }
 
 .preview-card{
@@ -21,16 +22,10 @@ body{
     border-radius: 1em;
     width: 500px;
 }
-.preview-card img{
-    border-radius: 1em;
 
-}
 .preview-card h1{
     color: white;
     margin: 1em 0em 0em;
-}
-.preview-card p{
-    font-size: 1em;
 }
 
 .preview-card .time{
@@ -64,7 +59,7 @@ body{
 
 .copy{
     color: #e0efff;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .hover:hover{
@@ -81,9 +76,44 @@ hr{
 
 .background_image{
     background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
     background-position: center;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     border-radius: 1em;
     margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.background_framework{
+    width: 500px;
+    height: 500px;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: transparent;
+}
+.background_framework:hover{
+    background-color: rgba(0, 166, 192, 0.6);
+    color: white;
+}
+
+/* mediaquery 425px */
+@media only screen and (max-width: 425px){
+    .background_image{
+        width: 240px;
+        height: 240px;
+    }
+
+    .background_framework{
+        width: 240px;
+        height: 240px;
+    }
+
+    .preview-card{
+        width: 240px;
+    }
 }
